@@ -4,6 +4,7 @@
   <title>Coastal Measures LLC</title>
     <link rel="shortcut icon" type="image/png" href="images/logos/coastalmeasures/logoonly_transparent_background.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 <style>
 
 <!--
@@ -26,7 +27,8 @@ a:active {
 img{
     max-width: 100%;
     max-height: auto;
-  }
+    
+}
 
 .imleft{
         float: left;
@@ -34,6 +36,12 @@ img{
 
 .imright{
         float: right;
+}
+
+.grow:hover {
+    transition:transform 0.25s ease;
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
 }
 
 div.box {
@@ -375,20 +383,20 @@ hr {
     
 }
 
+
 .footer {
-    border-radius: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
-    text-align: center;
-    background-color:#e5f3fb;
-    color: #000000;
-    font-size: 18px;
-    padding: 1px;
+  border-radius: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  text-align: center;
+  background-color:#ffffff;
+  color: #000000;
+  font-size: 18px;
+  padding: 1px;
 }
-
-
+    
 .sidecolumn {
   float: left;
   width: 100%;
@@ -403,11 +411,14 @@ hr {
   display: table;
 }
 
+body {
+    font-family: 'Roboto';
+}
 </style>
 </head>
 
 <div class="center" style="background-color: #246084;width:100%;">
-  <img class="center" style="width: 500px;  max-width: 80%;" src="images/logos/coastalmeasures/white_logo_color_background_short.png" id="responsive-image" alt="Coastal Measures"/>
+  <img class="center" style="width: 300px;  max-width: 80%;" src="images/logos/coastalmeasures/white_logo_color_background_short.png" id="responsive-image" alt="Coastal Measures"/>
 </div>
 
 <button class="collapsible">
@@ -463,46 +474,42 @@ hr {
 
 <div id="products section"; style="background-color:rgb(255,255,255);" class="col-8 col-s-12 menu">
         
-  <p style="text-align:center;font-size:2em";class="medium"><b>Products</b></p>
-  <img class="center" src="images/logos/driftalong/DA_Logo_v03.png" alt="Coastal Measures"/>
+  <p style="text-align:center;font-size:2em";class="medium"></p>
+  <img class="center" style="width: 500px;  max-width: 80%;" src="images/logos/driftalong/DA_Logo_v03.png" alt="Coastal Measures"/>
   <br>
 
   <div class="row">
-      <p><font size="4"><b>DriftAlong</b> is a passive drifter built from Commercial Off The Shelf (COTS) hardware and using open source software maintained by Coastal Measures. Location data is streamed to a cloud server where it is available in near-real time via an easy to use web-based user interface. We chose to make our aquisition software open-source python so it is ready to use as is or customizable for scientists and engineers tweak to their specific needs. The aquisition hardware has 2x extra USB ports and GPIO pins available for additional sensors. Have questions? Please reach out and we are eager to help!<br><br><br></font></p>
+      <p><font size="4"><b>DriftAlong</b> is passive drifter system that provides real-time location tracking and swarm statistics via a web-based user interface or API.<br><br>
+        
+      Weather you need 3, 10, or 1000 drifters to measure currents, dispersion, or validate a numerical model, our innovative hardware design and group monitoring and controls enable true swarm deployments to fit your needs. <br><br>
+      
+      Have questions? Please reach out and we are eager to help!<br><br><br></font></p>
   </div>
 
   <div class="responsive">
       <div class="gallery">
-          <a target="_blank" href="DSC_0397.JPG">
-              <img src="images/DSC_0397.JPG" alt="Forest" width="600" height="400">
-          </a>
+              <img class="grow" src="images/DSC_0397.JPG" alt="Forest" width="600" height="400">
       <div class="desc">Turning a DriftAlong on before deploying.</div>
       </div>  
   </div>
   
   <div class="responsive">
       <div class="gallery">
-          <a target="_blank" href="FRF_DA_A001_20191103.png">
-          <img src="images/FRF_DA_A001_20191103.png" alt="Forest" width="600" height="400">
-          </a>
+          <img class="grow" src="images/FRF_DA_A001_20191103.png" alt="Forest" width="600" height="400">
           <div class="desc">Deployed during moderate wave conditions, this DriftAlong relatively quickly washed ashore due to stokes drift. Periods of high velocity mark when the DriftAlong was within breaking waves.</div>
       </div>
   </div>
 
   <div class="responsive">
       <div class="gallery">
-          <a target="_blank" href="DA_NB_6.png">
-              <img src="images/DA_NB_6.png" alt="Cinque Terre" width="600" height="400">
-          </a>
+              <img class="grow" src="images/DA_NB_6.png" alt="Cinque Terre" width="600" height="400">
       <div class="desc">6 DriftAlongs were used for a study of current patterns in the Great Bay,NH conducted by the University of New Hampshire. They were also used to test the effectiveness of different setups of the stabilization fins.</div>
       </div>
   </div>
   
   <div class="responsive">
       <div class="gallery">
-          <a target="_blank" href="FRF_20191113_DA_A0001.png">
-              <img src="images/FRF_20191113_DA_A0001.png" alt="Cinque Terre" width="600" height="400">
-          </a>
+              <img class="grow" src="images/FRF_20191113_DA_A0001.png" alt="Cinque Terre" width="600" height="400">
       <div class="desc">This DriftAlong was deployed during a high wind and wave event. At first, waves and currents pushed the sensor landward. Once within the trough between the sanbar and the coastline, a strong current rapidly moved the DriftAlong several miles down the coast where it was recovered.</div>
       </div>
   </div>
@@ -510,18 +517,14 @@ hr {
 
   <div class="responsive">
       <div class="gallery">
-          <a target="_blank" href="2019-12-31-075512_480x320_scrot.png">
-              <img src="images/2019-12-31-075512_480x320_scrot.png" alt="Forest" width="600" height="400">
-          </a>
+              <img class="grow" src="images/2019-12-31-075512_480x320_scrot.png" alt="Forest" width="600" height="400">
       <div class="desc">The status of a DriftAlong may be modified by a small touchscreen interface on the instruments, or wirelessly and in bulk from an online dashboard that passes messages via a cellular network</div>
       </div>
   </div>
 
   <div class="responsive">
       <div class="gallery">
-          <a target="_blank" href="DA_CompGUI_02.png">
-              <img src="images/DA_CompGUI_02.png" alt="Forest" width="600" height="400">
-          </a>
+              <img class="grow" src="images/DA_CompGUI_02.png" alt="Forest" width="600" height="400">
       <div class="desc">A computer interface may be used to wirelessly transfer data between DriftAlongs and any computer, immediately display the geographic data over satellite imagery, and save the data to a new file format.</div>
       </div>
   </div>
@@ -557,3 +560,7 @@ hr {
     
   </body>
   </html>
+
+<script type="text/javascript" src="list.js"></script>
+</body>
+</html>
